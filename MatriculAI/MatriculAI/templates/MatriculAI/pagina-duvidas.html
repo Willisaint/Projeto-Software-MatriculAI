@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" href="{% static 'MatriculAI/css/pagina-duvidas.css'%}">
+    <title>Página Dúvidas</title>
+</head>
+
+
+<body>
+
+    <header class="header-principal">
+        <div class="titulo-header">
+            <img src="{% static 'img/Logo site.png' %}" alt="Logo do matrículAI" class="logo">
+            <h1>MatriculAI</h1>
+        </div>
+        <nav class="menu-principal">
+            <a href="">Página Principal</a>
+            <a herf="">Sobre</a>
+        </nav>
+
+    </header>
+
+    <main class="conteudo-principal">
+    <div style="text-align: center;">
+    <h1 class="titulo">Perguntas Frenquentes</h1>
+    </div>
+
+    <div class="conteiner-faq">
+
+        <div class="bloco-pergunta-faq">
+            <button class="pergunta-faq">
+                <span class="numero-pergunta">1</span>
+                <span class="texto-pergunta">Como faço a minha conta?</span>
+                <span class="seta-toggle">▼</span>
+            </button>
+
+            <div class="resposta-faq">
+                <p>
+                Na página inicial, clique em “Começar a montar a minha grade” que você será levado para uma página de login. Lá terá um botão “Ainda não possui conta?”, te rediressionando para a página de criação de conta. Daí basta colocar seu nome, matrícula, email e uma senha e pronto!
+                </p>
+            </div>
+        </div>
+
+        <div class="bloco-pergunta-faq">
+            <button class="pergunta-faq">
+                <span class="numero-pergunta">2</span>
+                <span class="texto-pergunta">Como funciona a criação dos horários?</span>
+                <span class="seta-toggle">▼</span>
+            </button>
+
+            <div class="resposta-faq">
+                <p>
+                    Para criar uma grade, basta entrar em sua conta, clicar em criar nova grade ou em alguma que você queira editar. Selecione as matérias que você deseja cursas e os horários disponíveis que a nossa IA fará o melhor planejamento possível para o que você desejar. Se quiser editar alguma parte, é possível editar a tabela de horários da forma que preferir
+                </p>
+            </div>
+        </div>
+
+        <div class="bloco-pergunta-faq">
+            <button class="pergunta-faq">
+                <span class="numero-pergunta">3</span>
+                <span class="texto-pergunta">Preciso baixar a grade de horários sempre que fizer alguma edição?</span>
+                <span class="seta-toggle">▼</span>
+            </button>
+
+            <div class="resposta-faq">
+                <p>
+                    Não! Com a sua conta, será possível armazear todas as grades que você fizer ao longo da sua vida universitárias sem nenhuma complicação! Basta usar o seu login que suas grades vão ser salvas automaticamente
+                </p>
+            </div>
+        </div>
+    </div>
+    </main>
+    <script src ="static/MatriculAI/JavaScript/pagina-duvidasjs"></script>
+</body>
+</html>
