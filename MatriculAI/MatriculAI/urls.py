@@ -18,6 +18,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from MatriculAI import views
+from django.urls import include
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -26,7 +27,4 @@ urlpatterns = [
     path('login/', views.paginaLogin, name="paginaLogin"),
     path('cadastro/', views.paginaCadastro, name="paginaCadastro"),
     path('matricula/', views.matricula, name="matricula"),
-    path("MatriculAI/", include("MatriculAI.urls"),
-    path("usuario/", include("JP.urls"),
-    path("accounts/", include("django.contrib.auth.urls")),
 ]
