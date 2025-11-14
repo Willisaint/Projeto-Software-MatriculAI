@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "MatriculAI",
+    
 ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -45,7 +46,8 @@ CSRF_TRUSTED_ORIGINS = [
    'https://127.0.0.1:8000',
 ]
 
-
+LOGIN_REDIRECT_URL = '/MatriculAI/home/'
+LOGOUT_REDIRECT_URL = '/accounts/login/'
 
 
 MIDDLEWARE = [
