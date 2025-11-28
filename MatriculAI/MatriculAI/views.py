@@ -77,7 +77,7 @@ def testarPossibilidades(request):
     global horarios
     global horarios_i
     mats = [x["cod"] for x in turmas]
-    mat = list(set(mats))
+    mats = list(set(mats))
     horarios = testaPossibilidades(mats,turmas)
     horarios_i = 0
 
