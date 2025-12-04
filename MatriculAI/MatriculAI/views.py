@@ -33,8 +33,8 @@ def paginaDuvidas(request):
     return render(request, 'MatriculAI/pagina-duvidas.html')
 
 def paginaLogin(request):
-
-    return render(request, 'MatriculAI/login.html')
+   # Redireciona para a view de login do django (garante uso do auth view e do template correto)
+    return redirect(reverse('login'))
 
 def paginaCadastro(request):
 
